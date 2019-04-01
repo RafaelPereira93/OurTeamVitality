@@ -1,0 +1,148 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+li { list-style: none; }
+img { display: block; max-width: 100%; }
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+#our-team {
+  width: 100%;
+  padding: 60px;
+}
+
+#our-team .box-title {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #212529;
+}
+
+#our-team .box-title h2 {
+  font-size: 3em;
+  line-height: 58px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#our-team .box-title p {
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 10px auto;
+  max-width: 950px;
+}
+
+#our-team .box-title p::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 3px;
+  background-color: #EF4035;
+  margin: 20px auto;
+}
+
+.member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member .box-img {
+  position: relative;
+  padding: 15px;
+}
+
+.member .box-img .box-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.box-description h4 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 32px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.box-description h4:after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 1px;
+  background-color: #EF4035;
+  margin: 8px auto 12px auto;
+  box-shadow: 0 4px 0 #EF4035;
+}
+
+.box-description p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+  font-style: normal;
+  line-height: 27px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.box-description ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.box-description ul a {
+  margin: 0 10px;
+  padding: 2px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+  transition: .2s;
+}
+
+.box-description ul a:hover {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .box-description h4 {
+    font-size: 1.2em;
+  }
+  
+  .box-description p {
+   font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .member {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #our-team {
+    padding: 0;
+  }
+
+  #our-team .box-title h2 {
+    font-size: 2em;
+  }
+  
+  #our-team .box-title p {
+   font-size: 1.5em;
+  }
+}
+
+
+
+
+
